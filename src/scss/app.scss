@@ -1,0 +1,44 @@
+.mdl-layout__drawer>.mdl-layout__title,
+.mdl-layout__drawer>.mdl-layout-title {
+    line-height: 1.5em;
+    margin-top: 30px;
+    padding-right: 20px;
+}
+
+// Centering the button
+.mdl-layout__header .mdl-layout__drawer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Content
+.blog-max-width {
+    max-width: 1024px;
+    margin: auto;
+}
+
+// Post cards
+.card-wide.mdl-card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card-wide > .mdl-card__title {
+  color: #fff;
+  height: 250px;
+  background: url('../assets/demos/welcome_card.jpg') center / cover;
+}
+.card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+// Navbar background color
+// .mdl-layout__header {
+//     background-color: rgba(1,1,1,1);
+// }
+
+.subscribe-box {
+    .mdl-card__supporting-text {
+        padding-top: 0;
+    }
+}

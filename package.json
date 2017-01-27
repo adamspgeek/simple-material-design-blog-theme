@@ -1,0 +1,22 @@
+{
+    "devDependencies": {
+        "gulp": "*",
+        "gulp-sass": "*",
+        "gulp-clean-css": "*",
+        "gulp-concat": "*",
+        "gulp-uglify": "*",
+        "gulp-util": "*",
+        "gulp-flatten": "*",
+        "gulp-notify": "*",
+        "gulp-rename": "*",
+        "gulp-sourcemaps": "*",
+        "gulp-filter": "*",
+        "concurrently": "*",
+        "holderjs": "*",
+        "browser-sync": "*"
+    },
+    "scripts": {
+        "start": "concurrently \"gulp scss-dev\" \"gulp js-dev\" \"gulp move-fonts\" \"gulp move-images\" \"gulp serve-dev\"",
+        "build": "concurrently \"gulp scss-dev\" \"gulp scss\" \"gulp js-dev\" \"gulp js\" \"gulp move-fonts\" \"gulp move-images\""
+    }
+}
