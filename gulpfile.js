@@ -39,13 +39,13 @@ var jsFilesToWatch = [
 gulp.task('move-fonts', function(){
     return gulp.src(fontGlobs)
         .pipe(flatten())
-        .pipe(gulp.dest('./dist/fonts/'));
+        .pipe(gulp.dest('./docs/fonts/'));
 });
 
 gulp.task('move-images', function() {
     return gulp.src("./src/img/*")
         .pipe(flatten())
-        .pipe(gulp.dest('./dist/img/'));
+        .pipe(gulp.dest('./docs/img/'))
 });
 
 // Production specific tasks
@@ -55,7 +55,7 @@ gulp.task('scss', function() {
         .pipe(sass({ errLogToConsole: true }))
         .pipe(concat('app.min.css'))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('./dist/css/'))
+        .pipe(gulp.dest('./docs/css/'))
         .pipe(notify({
             title: 'Gulp SCSS',
             message: 'SCSS task completed!'
@@ -69,7 +69,7 @@ gulp.task('js', function() {
         .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./dist/js/'))
+        .pipe(gulp.dest('./docs/js/'))
         .pipe(notify({
             title: 'Gulp JS',
             message: 'JS task completed!'
@@ -82,7 +82,7 @@ gulp.task('js', function() {
 gulp.task('serve-dev', function() {
     browserSync.init({
         server: {
-            baseDir: ["./", "./docs"]
+            baseDir: ["./"]
         }
     });
     gulp.watch([scssFilesToWatch], ['scss-dev']);
@@ -94,7 +94,7 @@ gulp.task('scss-dev', function() {
     return gulp.src(scssFilesToConvert)
         .pipe(sass({ errLogToConsole: true }))
         .pipe(concat('app.css'))
-        .pipe(gulp.dest('./dist/css/'))
+        .pipe(gulp.dest('./docs/css/'))
         .pipe(notify({
             title: 'Gulp SCSS',
             message: 'SCSS task completed!'
@@ -105,7 +105,7 @@ gulp.task('scss-dev', function() {
 gulp.task('js-dev', function() {
     return gulp.src(jsFilesToCombine)
         .pipe(concat('app.js'))
-        .pipe(gulp.dest('./dist/js/'))
+        .pipe(gulp.dest('./docs/js/'))
         .pipe(notify({
             title: 'Gulp JS',
             message: 'JS task completed!'

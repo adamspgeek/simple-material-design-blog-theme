@@ -1,15 +1,28 @@
-.mdl-layout__drawer>.mdl-layout__title,
-.mdl-layout__drawer>.mdl-layout-title {
-    line-height: 1.5em;
-    margin-top: 30px;
-    padding-right: 20px;
+@import 'header';
+
+.mdl-layout__drawer {
+    &>.mdl-layout__title,
+    &>.mdl-layout-title {
+        line-height: 1.5em;
+        margin-top: 30px;
+        padding-right: 20px;
+    }
 }
 
 // Centering the button
-.mdl-layout__header .mdl-layout__drawer-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.mdl-layout__header {
+    .mdl-layout__drawer-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mdl-layout-title {
+        a {
+            color: #fff;
+            font-weight: normal;
+            text-decoration: none;
+        }
+    }
 }
 
 // Content
@@ -19,17 +32,41 @@
 }
 
 // Post cards
-.card-wide.mdl-card {
-  width: 100%;
-  margin-bottom: 20px;
-}
-.card-wide > .mdl-card__title {
-  color: #fff;
-  height: 250px;
-  background: url('../assets/demos/welcome_card.jpg') center / cover;
-}
-.card-wide > .mdl-card__menu {
-  color: #fff;
+.post-card {
+    width: 100%;
+    margin-bottom: 20px;
+    >.mdl-card__title {
+        color: #fff;
+        height: 250px;
+    }
+    >.mdl-card__menu {
+        color: #fff;
+    }
+    .mdl-card__title {
+        padding: 0;
+        .mdl-card__title-text {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(1,1,1,0.5);
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: normal;
+            }
+        }
+    }
+    .post-card__meta {
+        margin-bottom: 10px;
+        p {
+            margin: 0;
+        }
+        a {
+            color: rgba(0,0,0,.54);
+        }
+    }
+    .post-card__tag {
+
+    }
 }
 
 // Navbar background color
@@ -42,3 +79,60 @@
         padding-top: 0;
     }
 }
+
+.mdl-mega-footer {
+    .mdl-mega-footer__middle-section {
+        max-width: 970px;
+        margin: 0 auto;
+        .social-media-icon {
+            padding-right: 10px;
+        }
+    }
+    .mdl-mega-footer__bottom-section {
+        max-width: 970px;
+        margin: 0 auto;
+    }
+}
+
+.sidebar {
+    .mdl-card {
+        margin-bottom: 20px;
+    }
+}
+
+.recent-posts {
+    .mdl-card__supporting-text {
+        padding-top: 0;
+    }
+    .recent-posts__post {
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: 1px solid #e0e0e0;
+        &:last-child {
+            border-bottom: none;
+        }
+        .recent-posts__image-container {
+            margin-left: 0;
+            .image {
+                width: 100%;
+            }
+        }
+        .recent-posts__text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title {
+                margin: 0;
+                font-size: 15px;
+                line-height: 1em;
+                font-weight: bold;
+            }
+            .time {
+                font-size: 10px;
+                line-height: 1em;
+                margin: 5px 0 0 0;
+            }
+        }
+    }
+}
+
