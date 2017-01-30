@@ -85,3 +85,8 @@
       font-size: 10px;
       line-height: 1em;
       margin: 5px 0 0 0; }
+
+.index-page .table-card {
+  width: 100%; }
+  .index-page .table-card .table-card__table {
+    width: 100%; }
