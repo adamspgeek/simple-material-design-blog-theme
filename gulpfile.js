@@ -82,7 +82,7 @@ gulp.task('js', function() {
 gulp.task('serve-dev', function() {
     browserSync.init({
         server: {
-            baseDir: ["./"]
+            baseDir: ["./docs/"]
         }
     });
     gulp.watch([scssFilesToWatch], ['scss-dev']);
