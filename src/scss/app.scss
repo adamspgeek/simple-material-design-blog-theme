@@ -24,6 +24,14 @@
         }
     }
 }
+.mdl-layout__content {
+    .sidebar {
+        >.mdl-card {
+            margin-bottom: 20px;
+        }
+    }
+}
+
 
 // Content
 .blog-max-width {
