@@ -69,8 +69,7 @@
   padding-top: 0; }
 
 .recent-posts .recent-posts__post {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 15px 0;
   border-bottom: 1px solid #e0e0e0; }
   .recent-posts .recent-posts__post:last-child {
     border-bottom: none; }
@@ -81,12 +80,15 @@
   .recent-posts .recent-posts__post .recent-posts__text-container {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 10px;
+    flex-grow: 1; }
     .recent-posts .recent-posts__post .recent-posts__text-container .title {
       margin: 0;
       font-size: 15px;
       line-height: 1em;
-      font-weight: bold; }
+      font-weight: normal; }
     .recent-posts .recent-posts__post .recent-posts__text-container .time {
       font-size: 10px;
       line-height: 1em;
