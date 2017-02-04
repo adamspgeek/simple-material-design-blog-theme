@@ -15,11 +15,32 @@
   text-decoration: none; }
 
 .mdl-layout__content .sidebar > .mdl-card {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  width: 100%; }
 
 .blog-max-width {
   max-width: 1024px;
   margin: auto; }
+  @media (min-width: 1450px) {
+    .blog-max-width {
+      max-width: 1400px; } }
+  @media (min-width: 1900px) {
+    .blog-max-width {
+      max-width: 1850px; } }
+  @media (min-width: 1450px) {
+    .blog-max-width .post-card {
+      width: 48%;
+      float: left; } }
+  @media (min-width: 1900px) {
+    .blog-max-width .post-card {
+      width: 48%;
+      float: left; } }
+  @media (min-width: 1450px) {
+    .blog-max-width .post-card:nth-child(odd) {
+      margin-right: 25px; } }
+  @media (min-width: 1900px) {
+    .blog-max-width .post-card:nth-child(odd) {
+      margin-right: 40px; } }
 
 .post-card {
   width: 100%;
@@ -52,6 +73,12 @@
 .subscribe-box .mdl-card__supporting-text {
   padding-top: 0; }
 
+.subscribe-box .mdl-textfield {
+  width: 100%; }
+
+.subscribe-box .mdl-button {
+  width: 100%; }
+
 .mdl-mega-footer .mdl-mega-footer__middle-section {
   max-width: 970px;
   margin: 0 auto; }
@@ -80,7 +107,7 @@
   .recent-posts .recent-posts__post .recent-posts__text-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     box-sizing: border-box;
     padding-left: 10px;
     flex-grow: 1; }
@@ -89,12 +116,18 @@
       font-size: 15px;
       line-height: 1em;
       font-weight: normal; }
+      @media (min-width: 1900px) {
+        .recent-posts .recent-posts__post .recent-posts__text-container .title {
+          font-size: 22px; } }
       .recent-posts .recent-posts__post .recent-posts__text-container .title a {
         text-decoration: none; }
     .recent-posts .recent-posts__post .recent-posts__text-container .time {
       font-size: 10px;
       line-height: 1em;
       margin: 5px 0 0 0; }
+      @media (min-width: 1900px) {
+        .recent-posts .recent-posts__post .recent-posts__text-container .time {
+          font-size: 15px; } }
 
 .author-box .author-box__image {
   width: 100px;
@@ -131,3 +164,13 @@
   padding: 20px 40px; }
   .contact-form .mdl-textfield {
     width: 100%; }
+
+.jumbotron {
+  background-color: rgba(255, 87, 34, 0.9);
+  padding: 40px 0;
+  box-sizing: border-box; }
+  .jumbotron .jumbotron__image {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto; }
