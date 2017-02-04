@@ -89,10 +89,27 @@
       font-size: 15px;
       line-height: 1em;
       font-weight: normal; }
+      .recent-posts .recent-posts__post .recent-posts__text-container .title a {
+        text-decoration: none; }
     .recent-posts .recent-posts__post .recent-posts__text-container .time {
       font-size: 10px;
       line-height: 1em;
       margin: 5px 0 0 0; }
+
+.author-box .author-box__image {
+  width: 100px;
+  display: block;
+  float: left;
+  margin: 0 20px 10px 0; }
+
+.categories .categories__single-category h3 {
+  font-size: 15px;
+  line-height: 1em;
+  margin: 0 0 20px 0; }
+  .categories .categories__single-category h3 a {
+    font-size: 15px;
+    line-height: 1em;
+    text-decoration: none; }
 
 .index-page .table-card {
   width: 100%; }
@@ -100,3 +117,17 @@
     width: 100%; }
   .index-page .table-card .table-card__page-link {
     width: 200px; }
+
+.prev-next-post {
+  overflow: hidden; }
+  .prev-next-post .prev-next-post__next {
+    float: right; }
+  .prev-next-post .prev-next-post__prev {
+    float: left; }
+
+.contact-form {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 40px; }
+  .contact-form .mdl-textfield {
+    width: 100%; }

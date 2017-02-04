@@ -139,6 +139,9 @@
                 font-size: 15px;
                 line-height: 1em;
                 font-weight: normal;
+                a {
+                    text-decoration: none;
+                }
             }
             .time {
                 font-size: 10px;
@@ -146,6 +149,34 @@
                 margin: 5px 0 0 0;
             }
         }
+    }
+}
+
+.author-box {
+    .author-box__image {
+        width: 100px;
+        display: block;
+        float: left;
+        margin: 0 20px 10px 0;
+    }
+    .author-box__info {
+
+    }
+}
+
+.categories {
+    .categories__single-category {
+        h3 {
+            font-size: 15px;
+            line-height: 1em;
+            margin: 0 0 20px 0;
+            a {
+                font-size: 15px;
+                line-height: 1em;
+                text-decoration: none;
+            }
+        }
+
     }
 }
 
@@ -158,5 +189,25 @@
         .table-card__page-link {
             width: 200px;
         }
+    }
+}
+
+.prev-next-post {
+    overflow: hidden;
+    .prev-next-post__next {
+        float: right;
+    }
+    .prev-next-post__prev {
+        float: left;
+    }
+}
+
+
+.contact-form {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    .mdl-textfield {
+        width: 100%;
     }
 }
