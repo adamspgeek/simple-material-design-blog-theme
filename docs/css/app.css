@@ -28,19 +28,21 @@
     .blog-max-width {
       max-width: 1850px; } }
   @media (min-width: 1450px) {
-    .blog-max-width .post-card {
-      width: 48%;
-      float: left; } }
-  @media (min-width: 1900px) {
-    .blog-max-width .post-card {
-      width: 48%;
-      float: left; } }
-  @media (min-width: 1450px) {
     .blog-max-width .post-card:nth-child(odd) {
       margin-right: 25px; } }
   @media (min-width: 1900px) {
     .blog-max-width .post-card:nth-child(odd) {
       margin-right: 40px; } }
+
+@media (min-width: 1450px) {
+  .all-posts .blog-max-width .post-card {
+    width: 48%;
+    float: left; } }
+
+@media (min-width: 1900px) {
+  .all-posts .blog-max-width .post-card {
+    width: 48%;
+    float: left; } }
 
 .post-card {
   width: 100%;

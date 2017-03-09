@@ -68,7 +68,7 @@ gulp.task('serve-dev', function() {
         }
     });
     gulp.watch([scssFilesToWatch], ['scss-dev']);
-    gulp.watch([jsFilesToWatch], ['js-dev']);
+    // gulp.watch([jsFilesToWatch], ['js-dev']);
     gulp.watch("./docs/*.html").on('change', browserSync.reload);
 });
 

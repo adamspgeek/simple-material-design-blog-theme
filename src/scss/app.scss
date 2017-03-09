@@ -44,20 +44,27 @@
         max-width: 1850px;
     }
     .post-card {
-        @media (min-width: 1450px) {
-            width: 48%;
-            float: left;
-        }
-        @media (min-width: 1900px) {
-            width: 48%;
-            float: left;
-        }
         &:nth-child(odd) {
             @media (min-width: 1450px) {
                 margin-right: 25px;
             }
             @media (min-width: 1900px) {
                 margin-right: 40px;
+            }
+        }
+    }
+}
+
+.all-posts {
+    .blog-max-width {
+        .post-card {
+            @media (min-width: 1450px) {
+                width: 48%;
+                float: left;
+            }
+            @media (min-width: 1900px) {
+                width: 48%;
+                float: left;
             }
         }
     }
